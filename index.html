@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shilpa Paladugu - Backend Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><button id="theme-toggle">Toggle Dark Mode</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <img src="assets/profile.jpeg" alt="Shilpa Paladugu" class="profile-img">
+        <h1>Shilpa Paladugu</h1>
+        <p>Backend Developer | Master’s in Information Technology</p>
+        <a href="assets/resume.pdf" download class="btn">Download Resume</a>
+        <a href="#portfolio" class="btn">View Projects</a>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Software Engineer with 1.8 years of experience in backend development at Wipro, specializing in Java, Spring Boot, and Python. Master’s in Information Technology from Northern Arizona University (3.6/4.0). Proficient in building scalable RESTful APIs, microservices, and cloud solutions (AWS, Azure). Skilled in troubleshooting, system optimization (improved efficiency by 30%), and cross-functional collaboration. Passionate about delivering robust, efficient systems.</p>
+    </section>
+
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <h3>Cloud Strategizing for Small Business</h3>
+                <p>Designed Azure infrastructure for small businesses, optimizing compute, storage, and network configurations. Deployed virtual networks and VMs using Bicep templates and CLI scripts. Implemented Azure Monitor and Security Center for real-time metrics and security.</p>
+                <p><strong>Tech:</strong> Python, React.js, Azure SDK</p>
+                <a href="#" class="btn">View Details</a>
+            </div>
+            <div class="project-card">
+                <h3>Credit Card Fraud Detection</h3>
+                <p>Developed a LightGBM model to detect fraudulent transactions, achieving high precision and recall. Preprocessed data with SMOTE and visualized patterns using matplotlib. Evaluated performance with ROC-AUC and stratified k-fold cross-validation.</p>
+                <p><strong>Tech:</strong> Next.js, Python, LightGBM</p>
+                <a href="#" class="btn">View Details</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="resume">
+        <h2>Resume</h2>
+        <p>Explore my experience and skills in detail.</p>
+        <a href="assets/resume.pdf" target="_blank" class="btn">Preview Resume</a>
+        <a href="assets/resume.pdf" download class="btn">Download Resume</a>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Connect with me for opportunities or inquiries.</p>
+        <a href="mailto:sp2925@nau.edu" class="contact-icon">✉️ Email</a>
+        <a href="[your-linkedin-url]" target="_blank" class="contact-icon">🔗 LinkedIn</a>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
