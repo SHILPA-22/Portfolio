@@ -1,18 +1,18 @@
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
-    background-color: #1a1a1a; /* Dark gray background */
-    color: #d1d1d1; /* Light gray text */
+    background-color: #1a1a1a;
+    color: #d1d1d1;
     position: relative;
-    background-image: url('assets/background.gif'); /* Background GIF */
+    background-image: url('assets/background.gif');
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
 }
 
 header nav {
-    background-color: #2c2c2c; /* Dark nav background */
-    border-top: 3px solid #26a69a; /* Teal accent */
+    background-color: #2c2c2c;
+    border-top: 3px solid #26a69a;
     padding: 15px 20px;
     position: sticky;
     top: 0;
@@ -40,13 +40,13 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #26a69a; /* Teal on hover */
+    color: #26a69a;
 }
 
 .hero {
     text-align: center;
     padding: 100px 20px;
-    background: linear-gradient(135deg, #2c2c2c, #26a69a); /* Dark to teal gradient */
+    background: linear-gradient(135deg, #2c2c2c, #26a69a);
     color: #ffffff;
     position: relative;
     z-index: 1;
@@ -80,13 +80,13 @@ nav ul li a:hover {
 }
 
 .resume-link:hover {
-    color: #1de9b6; /* Lighter teal on hover */
+    color: #1de9b6;
 }
 
 .btn {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #26a69a; /* Teal button */
+    background-color: #26a69a;
     color: #ffffff;
     text-decoration: none;
     border-radius: 25px;
@@ -96,21 +96,26 @@ nav ul li a:hover {
 }
 
 .btn:hover {
-    background-color: #1de9b6; /* Lighter teal on hover */
+    background-color: #1de9b6;
     transform: scale(1.05);
 }
 
 section {
     padding: 50px 20px;
-    background: rgba(40, 40, 40, 0.9); /* Semi-transparent dark background */
+    background: rgba(40, 40, 40, 0.9);
+    text-align: center; /* Center-align all section content */
 }
 
 h2 {
     font-family: 'Montserrat', sans-serif;
     font-size: 2em;
-    text-align: center;
     margin-bottom: 30px;
-    color: #ffffff; /* White headings */
+    color: #ffffff;
+}
+
+#about p {
+    max-width: 800px;
+    margin: 0 auto 20px;
 }
 
 .skills-grid {
@@ -129,6 +134,7 @@ h2 {
     text-align: center;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s, box-shadow 0.3s;
+    position: relative; /* For tooltip positioning */
 }
 
 .skill-card:hover {
@@ -140,6 +146,12 @@ h2 {
     font-size: 2em;
     color: #26a69a;
     margin-bottom: 10px;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.skill-card:hover i {
+    transform: scale(1.2);
+    color: #1de9b6;
 }
 
 .skill-card span {
@@ -160,6 +172,29 @@ h2 {
     height: 100%;
     border-radius: 10px;
     transition: width 1s ease-in-out;
+}
+
+.skill-tooltip {
+    visibility: hidden;
+    width: 120px;
+    background-color: #26a69a;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    font-size: 12px;
+}
+
+.skill-card:hover .skill-tooltip {
+    visibility: visible;
+    opacity: 1;
 }
 
 .project-grid {
@@ -216,6 +251,17 @@ h2 {
     border-radius: 10px;
     margin-bottom: 15px;
     border: 2px solid #26a69a;
+}
+
+.resume-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.resume-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 
 .contact-links {
